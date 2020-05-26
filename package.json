@@ -10,7 +10,8 @@
   "scripts": {
     "init": "./init.sh",
     "build": "./build.sh",
-    "serve": "./serve.sh"
+    "serve": "./serve.sh",
+    "clear_node_modules": "rm -rf ./node_modules"
   },
   "dependencies": {
     "axios": "^0.19.2",
