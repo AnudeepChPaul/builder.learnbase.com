@@ -1,0 +1,28 @@
+{
+  "name": "builder.learnbase.com",
+  "version": "1.0.0",
+  "description": "learnbase.com builder module",
+  "main": "index.js",
+  "repository": "https://github.com/AnudeepChPaul/builder.learnbase.com.git",
+  "author": "Anudeep Chandra Paul <achandrapaul@manh.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "init": "./init.sh",
+    "build": "./build.sh",
+    "serve": "./serve.sh"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "bootstrap": "^4.5.0",
+    "next": "9.4.2",
+    "react": "16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.0"
+  }
+}
