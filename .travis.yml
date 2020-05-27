@@ -10,7 +10,7 @@ install:
   - ./init.sh
   - lerna bootstrap
 
-matrix:
+jobs:
   include:
     - name: Auth Pipeline
       env: PACKAGE_LOCATION=packages/auth.learnbase.com PACKAGE_NAME=auth.learnbase.com
@@ -18,7 +18,7 @@ matrix:
       env: PACKAGE_LOCATION=packages/app.learnbase.com PACKAGE_NAME=app.learnbase.com
 
 script:
-  - cd ./packages/$PACKAGE_LOCATION
+  - cd ./$PACKAGE_LOCATION
   - yarn build
 
 deploy:
