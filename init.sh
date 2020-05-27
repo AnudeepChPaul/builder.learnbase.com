@@ -12,5 +12,3 @@ yarn
 lerna init
 lerna bootstrap
 
-yarn add './packages/core.learnbase.com'
-
