@@ -108,10 +108,3 @@ yarn.lock
 
 .gitmodules
 
-auth.learnbase.com
-
-app.learnbase.com
-
-api.learnbase.com
-
-core.learnbase.com
