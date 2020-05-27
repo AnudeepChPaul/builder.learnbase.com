@@ -12,7 +12,7 @@
     "build": "./build.sh",
     "serve": "./serve.sh",
     "clear_node_modules": "rm -rf ./node_modules",
-    "add-deps": "lerna add https://github.com/AnudeepChPaul/core.learnbase.com.git"
+    "add-deps": "lerna add https://github.com/AnudeepChPaul/core.learnbase.com.git && lerna bootstrap --force-local"
   },
   "dependencies": {
     "axios": "^0.19.2",
