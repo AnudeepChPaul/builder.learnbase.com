@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - "12.4.0"
+
+cache: yarn
+
+install:
+  - yarn global add lerna jest now
+  - ./init.sh
+  - lerna bootstrap
+
+matrix:
+  include:
+    - name: Auth Pipeline
+      env: PACKAGE_LOCATION=packages/auth.learnbase.com PACKAGE_NAME=auth.learnbase.com
+    - name: App Pipeline
+      env: PACKAGE_LOCATION=packages/app.learnbase.com PACKAGE_NAME=app.learnbase.com
+
+script:
+  - cd ./packages/$PACKAGE_LOCATION
+  - yarn build
+
+deploy:
+  provider: script
+  script: now public --token $VERCEL_TOKEN
+  skip_cleanup: true
+  app: $PACKAGE_NAME

@@ -12,7 +12,8 @@
     "build": "./build.sh",
     "serve": "./serve.sh",
     "clear_node_modules": "rm -rf ./node_modules",
-    "add-deps": "lerna add https://github.com/AnudeepChPaul/core.learnbase.com.git && lerna bootstrap --force-local"
+    "add-deps": "lerna add https://github.com/AnudeepChPaul/core.learnbase.com.git",
+    "link-deps": "lerna bootstrap --force-local"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -26,6 +27,7 @@
     "sass": "^1.26.5"
   },
   "devDependencies": {
+    "jest": "^26.0.1",
     "lerna": "^3.22.0"
   }
 }
